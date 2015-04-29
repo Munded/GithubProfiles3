@@ -2,10 +2,10 @@ describe('Github Profile Finder', function(){
   it('finds profiles', function() {
     browser.get('http://localhost:3000');
 
-    eleent(by.model('searchTerm').sendKeys('spike01');
-      element(byclassName('btn')).click();
+    element(by.model('searchCtrl.searchTerm').sendKeys('spike01');
+    element(by.className('btn')).click();
 
-      expect(element(by.binding('user.login')).getText()).
-        toEqual('spike0');
+    expect(element(by.binding('user.login')).getText()).
+      toEqual('spike0');
   });
 });
